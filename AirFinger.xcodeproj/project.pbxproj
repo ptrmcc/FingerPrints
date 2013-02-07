@@ -18,6 +18,8 @@
 		04468CD316C2D804005E2994 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04468CD216C2D804005E2994 /* Default-568h@2x.png */; };
 		04468CD616C2D804005E2994 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04468CD516C2D804005E2994 /* AFViewController.m */; };
 		04468CD916C2D804005E2994 /* AFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04468CD716C2D804005E2994 /* AFViewController.xib */; };
+		04468CE116C2DB3C005E2994 /* AirFinger.m in Sources */ = {isa = PBXBuildFile; fileRef = 04468CE016C2DB3C005E2994 /* AirFinger.m */; };
+		04468CE416C40AE3005E2994 /* AFWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 04468CE316C40AE3005E2994 /* AFWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		04468CD416C2D804005E2994 /* AFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFViewController.h; sourceTree = "<group>"; };
 		04468CD516C2D804005E2994 /* AFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFViewController.m; sourceTree = "<group>"; };
 		04468CD816C2D804005E2994 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AFViewController.xib; sourceTree = "<group>"; };
+		04468CDF16C2DB3C005E2994 /* AirFinger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirFinger.h; sourceTree = "<group>"; };
+		04468CE016C2DB3C005E2994 /* AirFinger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirFinger.m; sourceTree = "<group>"; };
+		04468CE216C40AE3005E2994 /* AFWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFWindow.h; sourceTree = "<group>"; };
+		04468CE316C40AE3005E2994 /* AFWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				04468CD516C2D804005E2994 /* AFViewController.m */,
 				04468CD716C2D804005E2994 /* AFViewController.xib */,
 				04468CC316C2D804005E2994 /* Supporting Files */,
+				04468CDF16C2DB3C005E2994 /* AirFinger.h */,
+				04468CE016C2DB3C005E2994 /* AirFinger.m */,
+				04468CE216C40AE3005E2994 /* AFWindow.h */,
+				04468CE316C40AE3005E2994 /* AFWindow.m */,
 			);
 			path = AirFinger;
 			sourceTree = "<group>";
@@ -177,6 +187,8 @@
 				04468CC916C2D804005E2994 /* main.m in Sources */,
 				04468CCD16C2D804005E2994 /* AFAppDelegate.m in Sources */,
 				04468CD616C2D804005E2994 /* AFViewController.m in Sources */,
+				04468CE116C2DB3C005E2994 /* AirFinger.m in Sources */,
+				04468CE416C40AE3005E2994 /* AFWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

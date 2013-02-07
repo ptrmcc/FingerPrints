@@ -7,8 +7,8 @@
 //
 
 #import "AFAppDelegate.h"
-
 #import "AFViewController.h"
+#import "AirFinger.h"
 
 @implementation AFAppDelegate
 
@@ -21,11 +21,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[[AFWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[AFViewController alloc] initWithNibName:@"AFViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    #ifdef DEBUG
+    //[AirFinger initialize];
+    #endif
+    
     return YES;
 }
 
