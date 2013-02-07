@@ -20,6 +20,9 @@
 		04468CD916C2D804005E2994 /* AFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04468CD716C2D804005E2994 /* AFViewController.xib */; };
 		04468CE116C2DB3C005E2994 /* AirFinger.m in Sources */ = {isa = PBXBuildFile; fileRef = 04468CE016C2DB3C005E2994 /* AirFinger.m */; };
 		04468CE416C40AE3005E2994 /* AFWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 04468CE316C40AE3005E2994 /* AFWindow.m */; };
+		04468CEB16C43FAB005E2994 /* FingerPrint.png in Resources */ = {isa = PBXBuildFile; fileRef = 04468CE916C43FAB005E2994 /* FingerPrint.png */; };
+		04468CEC16C43FAB005E2994 /* FingerPrint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04468CEA16C43FAB005E2994 /* FingerPrint@2x.png */; };
+		04468CEE16C43FD9005E2994 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04468CED16C43FD9005E2994 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		04468CE016C2DB3C005E2994 /* AirFinger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirFinger.m; sourceTree = "<group>"; };
 		04468CE216C40AE3005E2994 /* AFWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFWindow.h; sourceTree = "<group>"; };
 		04468CE316C40AE3005E2994 /* AFWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFWindow.m; sourceTree = "<group>"; };
+		04468CE916C43FAB005E2994 /* FingerPrint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FingerPrint.png; sourceTree = "<group>"; };
+		04468CEA16C43FAB005E2994 /* FingerPrint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FingerPrint@2x.png"; sourceTree = "<group>"; };
+		04468CED16C43FD9005E2994 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04468CEE16C43FD9005E2994 /* QuartzCore.framework in Frameworks */,
 				04468CBD16C2D804005E2994 /* UIKit.framework in Frameworks */,
 				04468CBF16C2D804005E2994 /* Foundation.framework in Frameworks */,
 				04468CC116C2D804005E2994 /* CoreGraphics.framework in Frameworks */,
@@ -79,6 +86,7 @@
 		04468CBB16C2D804005E2994 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04468CED16C43FD9005E2994 /* QuartzCore.framework */,
 				04468CBC16C2D804005E2994 /* UIKit.framework */,
 				04468CBE16C2D804005E2994 /* Foundation.framework */,
 				04468CC016C2D804005E2994 /* CoreGraphics.framework */,
@@ -97,6 +105,8 @@
 				04468CC316C2D804005E2994 /* Supporting Files */,
 				04468CDF16C2DB3C005E2994 /* AirFinger.h */,
 				04468CE016C2DB3C005E2994 /* AirFinger.m */,
+				04468CE916C43FAB005E2994 /* FingerPrint.png */,
+				04468CEA16C43FAB005E2994 /* FingerPrint@2x.png */,
 				04468CE216C40AE3005E2994 /* AFWindow.h */,
 				04468CE316C40AE3005E2994 /* AFWindow.m */,
 			);
@@ -174,6 +184,8 @@
 				04468CD116C2D804005E2994 /* Default@2x.png in Resources */,
 				04468CD316C2D804005E2994 /* Default-568h@2x.png in Resources */,
 				04468CD916C2D804005E2994 /* AFViewController.xib in Resources */,
+				04468CEB16C43FAB005E2994 /* FingerPrint.png in Resources */,
+				04468CEC16C43FAB005E2994 /* FingerPrint@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
