@@ -18,8 +18,7 @@
 		04468CD316C2D804005E2994 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04468CD216C2D804005E2994 /* Default-568h@2x.png */; };
 		04468CD616C2D804005E2994 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04468CD516C2D804005E2994 /* AFViewController.m */; };
 		04468CD916C2D804005E2994 /* AFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04468CD716C2D804005E2994 /* AFViewController.xib */; };
-		04468CE116C2DB3C005E2994 /* AirFinger.m in Sources */ = {isa = PBXBuildFile; fileRef = 04468CE016C2DB3C005E2994 /* AirFinger.m */; };
-		04468CE416C40AE3005E2994 /* AFWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 04468CE316C40AE3005E2994 /* AFWindow.m */; };
+		04468CE416C40AE3005E2994 /* FPWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 04468CE316C40AE3005E2994 /* FPWindow.m */; };
 		04468CEB16C43FAB005E2994 /* FingerPrint.png in Resources */ = {isa = PBXBuildFile; fileRef = 04468CE916C43FAB005E2994 /* FingerPrint.png */; };
 		04468CEC16C43FAB005E2994 /* FingerPrint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04468CEA16C43FAB005E2994 /* FingerPrint@2x.png */; };
 		04468CEE16C43FD9005E2994 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04468CED16C43FD9005E2994 /* QuartzCore.framework */; };
@@ -34,18 +33,16 @@
 		04468CC616C2D804005E2994 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04468CC816C2D804005E2994 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04468CCA16C2D804005E2994 /* AirFinger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirFinger-Prefix.pch"; sourceTree = "<group>"; };
-		04468CCB16C2D804005E2994 /* AFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFAppDelegate.h; sourceTree = "<group>"; };
-		04468CCC16C2D804005E2994 /* AFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFAppDelegate.m; sourceTree = "<group>"; };
+		04468CCB16C2D804005E2994 /* AFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AFAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		04468CCC16C2D804005E2994 /* AFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AFAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		04468CCE16C2D804005E2994 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		04468CD016C2D804005E2994 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		04468CD216C2D804005E2994 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		04468CD416C2D804005E2994 /* AFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFViewController.h; sourceTree = "<group>"; };
-		04468CD516C2D804005E2994 /* AFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFViewController.m; sourceTree = "<group>"; };
+		04468CD416C2D804005E2994 /* AFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AFViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		04468CD516C2D804005E2994 /* AFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AFViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		04468CD816C2D804005E2994 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AFViewController.xib; sourceTree = "<group>"; };
-		04468CDF16C2DB3C005E2994 /* AirFinger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirFinger.h; sourceTree = "<group>"; };
-		04468CE016C2DB3C005E2994 /* AirFinger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirFinger.m; sourceTree = "<group>"; };
-		04468CE216C40AE3005E2994 /* AFWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFWindow.h; sourceTree = "<group>"; };
-		04468CE316C40AE3005E2994 /* AFWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFWindow.m; sourceTree = "<group>"; };
+		04468CE216C40AE3005E2994 /* FPWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FPWindow.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		04468CE316C40AE3005E2994 /* FPWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPWindow.m; sourceTree = "<group>"; };
 		04468CE916C43FAB005E2994 /* FingerPrint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FingerPrint.png; sourceTree = "<group>"; };
 		04468CEA16C43FAB005E2994 /* FingerPrint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FingerPrint@2x.png"; sourceTree = "<group>"; };
 		04468CED16C43FD9005E2994 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -103,12 +100,10 @@
 				04468CD516C2D804005E2994 /* AFViewController.m */,
 				04468CD716C2D804005E2994 /* AFViewController.xib */,
 				04468CC316C2D804005E2994 /* Supporting Files */,
-				04468CDF16C2DB3C005E2994 /* AirFinger.h */,
-				04468CE016C2DB3C005E2994 /* AirFinger.m */,
 				04468CE916C43FAB005E2994 /* FingerPrint.png */,
 				04468CEA16C43FAB005E2994 /* FingerPrint@2x.png */,
-				04468CE216C40AE3005E2994 /* AFWindow.h */,
-				04468CE316C40AE3005E2994 /* AFWindow.m */,
+				04468CE216C40AE3005E2994 /* FPWindow.h */,
+				04468CE316C40AE3005E2994 /* FPWindow.m */,
 			);
 			path = AirFinger;
 			sourceTree = "<group>";
@@ -199,8 +194,7 @@
 				04468CC916C2D804005E2994 /* main.m in Sources */,
 				04468CCD16C2D804005E2994 /* AFAppDelegate.m in Sources */,
 				04468CD616C2D804005E2994 /* AFViewController.m in Sources */,
-				04468CE116C2DB3C005E2994 /* AirFinger.m in Sources */,
-				04468CE416C40AE3005E2994 /* AFWindow.m in Sources */,
+				04468CE416C40AE3005E2994 /* FPWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +309,7 @@
 				04468CDE16C2D804005E2994 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

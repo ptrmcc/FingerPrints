@@ -1,15 +1,15 @@
 //
-//  AFWindow.m
-//  AirFinger
+//  FPWindow.m
+//  FingerPrints
 //
 //  Created by Peter McCurrach on 07/02/2013.
 //  Copyright (c) 2013 Peter McCurrach. All rights reserved.
 //
 
-#import "AFWindow.h"
+#import "FPWindow.h"
 
-@interface AFWindow()
-- (void) initAirFinger;
+@interface FPWindow()
+- (void) initFingerPrints;
 - (void) processTouches:(NSSet *)touches;
 - (BOOL) hasSecondaryMirroredScreen;
 - (void) refreshState;
@@ -17,7 +17,7 @@
 - (UIView *) getCachedFingerPrintFromTouchPointer:(NSString *)touchPointer;
 @end
 
-@implementation AFWindow
+@implementation FPWindow
 
 #pragma mark overridden methods
 
@@ -25,7 +25,7 @@
 {
     self = [super initWithCoder:aDecoder];
     if (self){
-        [self initAirFinger];
+        [self initFingerPrints];
     }
     return self; 
 }
@@ -34,7 +34,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self initAirFinger];
+        [self initFingerPrints];
     }
     return self;
 }
@@ -43,7 +43,7 @@
 {
     self = [super init];
     if (self) {
-        [self initAirFinger];
+        [self initFingerPrints];
     }
     return self;
 }
@@ -83,7 +83,7 @@
     [super sendEvent:event];
     
     //If enabled, process the event
-    if ([self showAirFinger])
+    if ([self showFingerPrints])
         [self processTouches:[event allTouches]];
 }
 
@@ -91,22 +91,22 @@
 
 //Main methods
 
-- (void) initAirFinger
+- (void) initFingerPrints
 {
-    [self setAirFingerEnabled:YES];
+    [self setFingerPrintsEnabled:YES];
     
     #ifndef DEBUG
         _isInReleaseMode = YES;
     #endif
     
-    [self setShowAirFingerInReleaseMode:NO];
-    [self setAlwaysShowAirFinger:NO];
-    //[self setRequestAirFingerConfirmation:NO];
+    [self setShowFingerPrintsInReleaseMode:NO];
+    [self setAlwaysShowFingerPrints:NO];
+    //[self setRequestFingerPrintsConfirmation:NO];
     
     touchMap = [[NSMutableDictionary alloc] init];
     
     //TODO move to AFAppDelegate
-    //[self setAlwaysShowAirFinger:YES];
+    //[self setAlwaysShowFingerPrints:YES];
     
     //Observers for keyboard actions
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
@@ -149,18 +149,18 @@
 
 - (void) refreshState
 {
-    BOOL newShowAirFinger = self.airFingerEnabled &&
-    ([self hasSecondaryMirroredScreen] || self.alwaysShowAirFinger) &&
-    //(!self.requestAirFingerConfirmation || self.airFingerConfirmed) &&
-    (!self.isInReleaseMode || self.showAirFingerInReleaseMode);
+    BOOL newShowFingerPrints = self.fingerPrintsEnabled &&
+    ([self hasSecondaryMirroredScreen] || self.alwaysShowFingerPrints) &&
+    //(!self.requestFingerPrintsConfirmation || self.FingerPrintsConfirmed) &&
+    (!self.isInReleaseMode || self.showFingerPrintsInReleaseMode);
     
-    BOOL hasStateChanged = newShowAirFinger != _showAirFinger;
-    _showAirFinger = newShowAirFinger;
+    BOOL hasStateChanged = newShowFingerPrints != _showFingerPrints;
+    _showFingerPrints = newShowFingerPrints;
     
     if (hasStateChanged)
         [self showHideFingerprints];
     
-    NSLog(@"Show air finger = %i", newShowAirFinger);
+    NSLog(@"Show air finger = %i", newShowFingerPrints);
 }
 
 - (BOOL) hasSecondaryMirroredScreen
@@ -180,7 +180,7 @@
 
 - (void) showHideFingerprints
 {
-    if (self.showAirFinger){
+    if (self.showFingerPrints){
         //TODO get the window associated with [UIScreen mainScreen];
         self.fingerPrintContainer = [[UIView alloc] initWithFrame:self.bounds];
         [self.fingerPrintContainer setUserInteractionEnabled:NO];
@@ -224,27 +224,27 @@
 
 #pragma mark overridden getters ^ setters
 
-- (void) setAirFingerEnabled:(BOOL)airFingerEnabled
+- (void) setFingerPrintsEnabled:(BOOL)fingerPrintsEnabled
 {
-    _airFingerEnabled = airFingerEnabled;
+    _fingerPrintsEnabled = fingerPrintsEnabled;
     [self refreshState];
 }
 
-- (void) setAlwaysShowAirFinger:(BOOL)alwaysShowAirFinger
+- (void) setAlwaysShowFingerPrints:(BOOL)alwaysShowFingerPrints
 {
-    _alwaysShowAirFinger = alwaysShowAirFinger;
+    _alwaysShowFingerPrints = alwaysShowFingerPrints;
     [self refreshState];
 }
 
-- (void) setShowAirFingerInReleaseMode:(BOOL)showAirFingerInReleaseMode
+- (void) setShowFingerPrintsInReleaseMode:(BOOL)showFingerPrintsInReleaseMode
 {
-    _showAirFingerInReleaseMode = showAirFingerInReleaseMode;
+    _showFingerPrintsInReleaseMode = showFingerPrintsInReleaseMode;
     [self refreshState];
 }
 
-/*- (void) setRequestAirFingerConfirmation:(BOOL)requestAirFingerConfirmation
+/*- (void) setRequestFingerPrintsConfirmation:(BOOL)requestFingerPrintsConfirmation
 {
-    _requestAirFingerConfirmation = requestAirFingerConfirmation;
+    _requestFingerPrintsConfirmation = requestFingerPrintsConfirmation;
     [self refreshState];
 }
 */

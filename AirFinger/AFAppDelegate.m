@@ -1,6 +1,6 @@
 //
 //  AFAppDelegate.m
-//  AirFinger
+//  FingerPrints
 //
 //  Created by Peter McCurrach on 06/02/2013.
 //  Copyright (c) 2013 Peter McCurrach. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import "AFAppDelegate.h"
 #import "AFViewController.h"
-#import "AirFinger.h"
+#import "FPWindow.h"
 
 @implementation AFAppDelegate
 
@@ -21,14 +21,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[AFWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[[FPWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[AFViewController alloc] initWithNibName:@"AFViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
     #ifdef DEBUG
-    //[AirFinger initialize];
+    //[FingerPrints initialize];
     #endif
     
     return YES;
