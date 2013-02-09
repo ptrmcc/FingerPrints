@@ -25,14 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04468CB816C2D804005E2994 /* AirFinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirFinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04468CB816C2D804005E2994 /* FingerPrints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPrints.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04468CBC16C2D804005E2994 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04468CBE16C2D804005E2994 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04468CC016C2D804005E2994 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		04468CC416C2D804005E2994 /* AirFinger-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirFinger-Info.plist"; sourceTree = "<group>"; };
+		04468CC416C2D804005E2994 /* FingerPrints-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FingerPrints-Info.plist"; sourceTree = "<group>"; };
 		04468CC616C2D804005E2994 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04468CC816C2D804005E2994 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04468CCA16C2D804005E2994 /* AirFinger-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirFinger-Prefix.pch"; sourceTree = "<group>"; };
+		04468CCA16C2D804005E2994 /* FingerPrints-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FingerPrints-Prefix.pch"; sourceTree = "<group>"; };
 		04468CCB16C2D804005E2994 /* AFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AFAppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		04468CCC16C2D804005E2994 /* AFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AFAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		04468CCE16C2D804005E2994 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		04468CAD16C2D804005E2994 = {
 			isa = PBXGroup;
 			children = (
-				04468CC216C2D804005E2994 /* AirFinger */,
+				04468CC216C2D804005E2994 /* FingerPrint */,
 				04468CBB16C2D804005E2994 /* Frameworks */,
 				04468CB916C2D804005E2994 /* Products */,
 			);
@@ -75,7 +75,7 @@
 		04468CB916C2D804005E2994 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				04468CB816C2D804005E2994 /* AirFinger.app */,
+				04468CB816C2D804005E2994 /* FingerPrints.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,7 +91,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		04468CC216C2D804005E2994 /* AirFinger */ = {
+		04468CC216C2D804005E2994 /* FingerPrint */ = {
 			isa = PBXGroup;
 			children = (
 				04468CCB16C2D804005E2994 /* AFAppDelegate.h */,
@@ -100,21 +100,19 @@
 				04468CD516C2D804005E2994 /* AFViewController.m */,
 				04468CD716C2D804005E2994 /* AFViewController.xib */,
 				04468CC316C2D804005E2994 /* Supporting Files */,
-				04468CE916C43FAB005E2994 /* FingerPrint.png */,
-				04468CEA16C43FAB005E2994 /* FingerPrint@2x.png */,
-				04468CE216C40AE3005E2994 /* FPWindow.h */,
-				04468CE316C40AE3005E2994 /* FPWindow.m */,
+				04468CF416C4475A005E2994 /* FingerPrints */,
 			);
-			path = AirFinger;
+			name = FingerPrint;
+			path = FingerPrints;
 			sourceTree = "<group>";
 		};
 		04468CC316C2D804005E2994 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				04468CC416C2D804005E2994 /* AirFinger-Info.plist */,
+				04468CC416C2D804005E2994 /* FingerPrints-Info.plist */,
 				04468CC516C2D804005E2994 /* InfoPlist.strings */,
 				04468CC816C2D804005E2994 /* main.m */,
-				04468CCA16C2D804005E2994 /* AirFinger-Prefix.pch */,
+				04468CCA16C2D804005E2994 /* FingerPrints-Prefix.pch */,
 				04468CCE16C2D804005E2994 /* Default.png */,
 				04468CD016C2D804005E2994 /* Default@2x.png */,
 				04468CD216C2D804005E2994 /* Default-568h@2x.png */,
@@ -122,12 +120,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		04468CF416C4475A005E2994 /* FingerPrints */ = {
+			isa = PBXGroup;
+			children = (
+				04468CE916C43FAB005E2994 /* FingerPrint.png */,
+				04468CEA16C43FAB005E2994 /* FingerPrint@2x.png */,
+				04468CE216C40AE3005E2994 /* FPWindow.h */,
+				04468CE316C40AE3005E2994 /* FPWindow.m */,
+			);
+			name = FingerPrints;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04468CB716C2D804005E2994 /* AirFinger */ = {
+		04468CB716C2D804005E2994 /* FingerPrints */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04468CDC16C2D804005E2994 /* Build configuration list for PBXNativeTarget "AirFinger" */;
+			buildConfigurationList = 04468CDC16C2D804005E2994 /* Build configuration list for PBXNativeTarget "FingerPrints" */;
 			buildPhases = (
 				04468CB416C2D804005E2994 /* Sources */,
 				04468CB516C2D804005E2994 /* Frameworks */,
@@ -137,9 +146,9 @@
 			);
 			dependencies = (
 			);
-			name = AirFinger;
-			productName = AirFinger;
-			productReference = 04468CB816C2D804005E2994 /* AirFinger.app */;
+			name = FingerPrints;
+			productName = FingerPrints;
+			productReference = 04468CB816C2D804005E2994 /* FingerPrints.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +161,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Peter McCurrach";
 			};
-			buildConfigurationList = 04468CB216C2D804005E2994 /* Build configuration list for PBXProject "AirFinger" */;
+			buildConfigurationList = 04468CB216C2D804005E2994 /* Build configuration list for PBXProject "FingerPrints" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -164,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04468CB716C2D804005E2994 /* AirFinger */,
+				04468CB716C2D804005E2994 /* FingerPrints */,
 			);
 		};
 /* End PBXProject section */
@@ -272,8 +281,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AirFinger/AirFinger-Prefix.pch";
-				INFOPLIST_FILE = "AirFinger/AirFinger-Info.plist";
+				GCC_PREFIX_HEADER = "FingerPrints/FingerPrints-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FingerPrints/FingerPrints-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -283,8 +293,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AirFinger/AirFinger-Prefix.pch";
-				INFOPLIST_FILE = "AirFinger/AirFinger-Info.plist";
+				GCC_PREFIX_HEADER = "FingerPrints/FingerPrints-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/FingerPrints/FingerPrints-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04468CB216C2D804005E2994 /* Build configuration list for PBXProject "AirFinger" */ = {
+		04468CB216C2D804005E2994 /* Build configuration list for PBXProject "FingerPrints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04468CDA16C2D804005E2994 /* Debug */,
@@ -302,7 +312,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04468CDC16C2D804005E2994 /* Build configuration list for PBXNativeTarget "AirFinger" */ = {
+		04468CDC16C2D804005E2994 /* Build configuration list for PBXNativeTarget "FingerPrints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04468CDD16C2D804005E2994 /* Debug */,

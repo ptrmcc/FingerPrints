@@ -106,7 +106,7 @@
     touchMap = [[NSMutableDictionary alloc] init];
     
     //TODO move to AFAppDelegate
-    //[self setAlwaysShowFingerPrints:YES];
+    [self setAlwaysShowFingerPrints:YES];
     
     //Observers for keyboard actions
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];

@@ -11,23 +11,7 @@
 @interface AFViewController ()
 
 @end
-
+//
 @implementation AFViewController
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];    
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
-- (void) button:(id)sender
-{
-    [self.view endEditing:YES];
-    [self resignFirstResponder];
-}
 
 @end
